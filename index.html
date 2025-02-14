@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -76,15 +77,10 @@
             width: 40%;
             border-radius: 10px;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-         }
-        .text1 {
+        }
+        .text {
             flex: 1;
             text-align: justify;
-        }
-        .sumber {
-            font-size: 0.8em;
-            color: #666;
-            margin-top: 10px;
         }
         .link {
             display: inline-block;
@@ -114,7 +110,6 @@
     </style>
 </head>
 <body>
-
 <!-- Halaman Utama -->
 <div class="main-container" id="main-page">
     <div class="icon">🌏</div>
@@ -123,7 +118,6 @@
     <p>Jelajahi keindahan budaya dari Nusa Tenggara Timur dan Nusa Tenggara Barat.</p>
     <a href="#map-page" class="btn">Klik di sini untuk mulai</a>
 </div>
-
 <!-- Halaman Peta -->
 <div class="container" id="map-page" style="display: none;">
     <h1>Pilih Wilayah</h1>
@@ -133,7 +127,6 @@
         <a href="#ntb-page" class="btn">NTB</a>
     </div>
 </div>
-
 <!-- Halaman NTT -->
 <div class="container" id="ntt-page" style="display: none;">
     <h1>Nusa Tenggara Timur (NTT)</h1>
@@ -147,12 +140,10 @@
             <p>Tari Caci adalah tarian perang khas Nusa Tenggara Timur (NTT) yang berasal dari masyarakat Manggarai, Flores. Nama Tari Caci berasal dari kata "ca" yang berarti satu dan "ci" yang berarti uji. 
             <p>Tarian ini biasanya ditampilkan pada saat syukuran musim panen, ritual tahun baru, dan upacara adat lainnya. Para penari menggunakan pakaian perang yang terdiri dari celana panjang putih, sarung songke, dan topeng atau panggal. Penari yang menyerang menggunakan cambuk yang disebut larik, sedangkan penari yang bertahan menggunakan perisai yang disebut nggiling.Tarian ini juga mengandung pesan damai, seperti saling menghormati dan tidak meninggalkan dendam.</p>
             <a class="link" href="https://youtu.be/bhW0LgMaFKg?si=6ls17k4UA7cTOPly" target="_blank">Tekan untuk menonton Tari Caci</a>
-            <div class="sumber">Sumber: detik.com dan kompas.com</div>
         </div>
     </div>
     <a href="#map-page" class="btn back-button">Kembali</a>
 </div>
-
 <!-- Halaman NTB -->
 <div class="container" id="ntb-page" style="display: none;">
     <h1>Nusa Tenggara Barat (NTB)</h1>
@@ -165,33 +156,27 @@
             <h2>Penjelasan Tarian</h2>
             <p>Tari Gendang Beleq adalah tarian yang berasal dari suku Sasak di Lombok dan ditarikan oleh sekelompok penari yang memainkan gendang berukuran besar yang disebut "beleq", Kata "beleq" dalam bahasa Sasak berarti "besar". Tari Gendang Beleq awalnya digunakan untuk menyemangati para prajurit yang akan berangkat atau kembali dari medan perang. Saat ini, tarian ini sering ditampilkan dalam berbagai acara adat dan penyambutan tamu kehormatan</p>
             <a class="link" href="https://youtu.be/xX7s0AiTCLE?si=ULdE46_FqVSzBGt3" target="_blank">Tekan untuk menonton Tari Gendang Beleq</a>
-            <div class="sumber">Sumber: IDN.times, orami, dan indonesia.go.id</div>
         </div>
     </div>
     <a href="#map-page" class="btn back-button">Kembali</a>
 </div>
-
 <script>
     const mainPage = document.getElementById('main-page');
     const mapPage = document.getElementById('map-page');
     const nttPage = document.getElementById('ntt-page');
     const ntbPage = document.getElementById('ntb-page');
-
     document.querySelector('.btn[href="#map-page"]').onclick = () => {
         mainPage.style.display = 'none';
         mapPage.style.display = 'block';
     };
-
     document.querySelector('.btn[href="#ntt-page"]').onclick = () => {
         mapPage.style.display = 'none';
         nttPage.style.display = 'block';
     };
-
     document.querySelector('.btn[href="#ntb-page"]').onclick = () => {
         mapPage.style.display = 'none';
         ntbPage.style.display = 'block';
     };
-
     document.querySelectorAll('.back-button').forEach(button => {
         button.onclick = () => {
             nttPage.style.display = 'none';
@@ -200,6 +185,5 @@
         };
     });
 </script>
-
 </body>
 </html>
